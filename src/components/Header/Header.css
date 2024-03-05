@@ -3,18 +3,13 @@
   top: 0px;
   left: 0px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.1);
-  /* backdrop-filter: blur(10px); */
   transition: 1px;
   z-index: 1300;
   width: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-.header.active {
-  background: #ffffff;
-  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
 }
 .logo {
   font-family: "Great Vibes", cursive;
@@ -23,19 +18,4 @@
   font-size: 40px;
   letter-spacing: 1px;
   color: white;
-}
-.header_items {
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 500;
-  font-size: 20px;
-  display: flex;
-  gap: 40px;
-  color: white;
-}
-.header_login {
-}
-.header_help {
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 500;
-  font-size: 20px;
 }

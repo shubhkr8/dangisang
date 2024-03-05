@@ -1,0 +1,68 @@
+.bioform {
+  margin: 1rem;
+}
+
+.bioform__container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2em;
+  width: 70vw;
+  margin: 1rem auto;
+
+  .InputBox-input {
+    width: -webkit-fill-available;
+  }
+
+  #InputBox__rfq_no {
+    grid-column: 1 / span 2;
+  }
+
+  #InputBox__scope {
+    grid-column: 1 / span 2;
+  }
+
+  .rfq_material_series {
+    border: 1px solid black;
+    padding: 0 1rem;
+    color: grey;
+  }
+  .rfq_material_series_list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+  }
+
+  .rfq__submit_button {
+    grid-column: 1 / span 2;
+    margin: auto;
+    justify-items: center;
+
+    .submit_button {
+      background-color: #f1f1f1;
+      color: black;
+      font-size: 16px;
+      padding: 16px 30px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: 0.3s linear;
+    }
+
+    .submit_button:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+}
+
+h1 {
+  text-align: center;
+  margin: 1rem auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .rfq__submit {
+    display: flex;
+    flex-direction: column;
+  }
+}

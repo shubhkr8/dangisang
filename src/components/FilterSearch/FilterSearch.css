@@ -1,31 +1,29 @@
 .FilterSearch {
   position: absolute;
   bottom: 10%;
-  left: 28%;
+  width: 100%;
   display: flex;
-  color: #72727d;
-}
-.FilterSearch_elm {
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  /* opacity: 50%; */
-  color: white;
-  margin: 10px;
+  justify-content: center;
+  align-items: center;
+
+  .FilterSearch_elm {
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    color: white;
+    gap: 2rem;
+    align-items: flex-end;
+    padding: 2rem 6rem;
+  }
+
+  .InputSelect {
+    .InputSelect-label {
+      width: max-content;
+      color: white;
+      margin-bottom: 0.5rem;
+    }
+  }
 }
 
-.gender_filter {
-  padding: 2px 10px;
-}
-.aged_filter {
-  /* display: flex; */
-  padding: 2px 10px;
-}
-.religion_filter {
-  padding: 2px 10px;
-}
-.mother_tongue {
-  padding: 2px 10px;
-}
 .button-7 {
   background: #00bcd5;
   border: 1px solid #fff;
