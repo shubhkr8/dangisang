@@ -1,0 +1,32 @@
+.ProfileCard {
+  display: flex;
+  max-width: 700px;
+  margin: auto;
+  /* border-radius: 2px solid grey; */
+  color: #46505b;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.dot {
+  margin-left: 0.375rem;
+  margin-right: 0.375rem;
+  padding: 0px 2px;
+}
+.profile_name {
+  color: black;
+  font-size: x-large;
+  font-weight: 600;
+}
+.profile_occupation {
+  gap: 10px;
+  display: flex;
+}
+.ProfileCard_img {
+  flex: 1;
+}
+.ProfileCard_detail {
+  flex: 2;
+  padding: 0.5rem;
+}
+.profile_cst_add {
+  display: flex;
+}

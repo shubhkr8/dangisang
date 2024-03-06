@@ -10,6 +10,7 @@ const initialBioFormData = {
   middle_name: "",
   date_of_birth: "",
   place_of_bith: "",
+  age: "",
   gotra: "",
   complexion: "",
   height: "",
@@ -28,6 +29,7 @@ const initialBioFormData = {
   father_occupation: "",
   mother_occupation: "",
   higher_degree: "",
+  caste: "",
 };
 
 const BioForm = () => {
@@ -56,6 +58,7 @@ const BioForm = () => {
             value={bioFormData.first_name}
             onChange={(e) => handleInputChange("first_name", e.target.value)}
           />
+
           <InputBox
             label="Middle Name"
             id="middle_name"
@@ -85,11 +88,25 @@ const BioForm = () => {
             onChange={(e) => handleInputChange("place_of_bith", e.target.value)}
           />
           <InputBox
+            label="Age"
+            id="age"
+            type="text"
+            value={bioFormData.age}
+            onChange={(e) => handleInputChange("age", e.target.value)}
+          />
+          <InputBox
             label="Gotra"
             id="gotra"
             type="text"
             value={bioFormData.gotra}
             onChange={(e) => handleInputChange("gotra", e.target.value)}
+          />
+          <InputBox
+            label="Caste"
+            id="caste"
+            type="text"
+            value={bioFormData.caste}
+            onChange={(e) => handleInputChange("caste", e.target.value)}
           />
           <InputBox
             label="Complextion"
@@ -101,7 +118,7 @@ const BioForm = () => {
           <InputBox
             label="Height"
             id="height"
-            type="date"
+            type="text"
             value={bioFormData.height}
             onChange={(e) => handleInputChange("height", e.target.value)}
           />
@@ -153,6 +170,20 @@ const BioForm = () => {
             type="text"
             value={bioFormData.email_id}
             onChange={(e) => handleInputChange("email_id", e.target.value)}
+          />
+          <InputBox
+            label="Income"
+            id="income"
+            type="text"
+            value={bioFormData.income}
+            onChange={(e) => handleInputChange("income", e.target.value)}
+          />
+          <InputBox
+            label=" Highest Degree"
+            id="higher_degree"
+            type="text"
+            value={bioFormData.higher_degree}
+            onChange={(e) => handleInputChange("higher_degree", e.target.value)}
           />
           <div className="rfq__submit_button">
             <button type="submit" className="submit_button">
